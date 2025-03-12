@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_home">
+
+    <!-- ✅ Home Fragment -->
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.jurni.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <!-- ✅ Action: Home → Trips -->
+        <action
+            android:id="@+id/action_nav_home_to_nav_trips"
+            app:destination="@id/nav_trips"/>
+    </fragment>
+
+    <!-- ✅ Trips Fragment -->
+    <fragment
+        android:id="@+id/nav_trips"
+        android:name="com.example.jurni.ui.trips.TripsFragment"
+        android:label="Trips"
+        tools:layout="@layout/fragment_trips">
+
+        <!-- ✅ Action: Trips → New Trip -->
+        <action
+            android:id="@+id/action_nav_trips_to_newTripFragment"
+            app:destination="@id/newTripFragment"/>
+    </fragment>
+
+    <!-- ✅ New Trip Fragment -->
+    <fragment
+        android:id="@+id/newTripFragment"
+        android:name="com.example.jurni.ui.trips.NewTripFragment"
+        android:label="New Trip"
+        tools:layout="@layout/fragment_new_trip"/>
+
+    <!-- ✅ Chat Fragment -->
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.example.jurni.ui.chat.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat">
+
+        <!-- ✅ Action: Chat → Chat Details -->
+        <action
+            android:id="@+id/action_nav_chat_to_chatDetailsFragment"
+            app:destination="@id/chatDetailsFragment"/>
+    </fragment>
+
+    <!-- ✅ Chat Details Fragment -->
+    <fragment
+        android:id="@+id/chatDetailsFragment"
+        android:name="com.example.jurni.ui.chat.ChatDetailsFragment"
+        android:label="Chat Details"
+        tools:layout="@layout/fragment_chat_details">
+
+        <!-- ✅ Argument: Pass `postId` -->
+        <argument
+            android:name="postId"
+            app:argType="string"
+            app:nullable="false"/>
+    </fragment>
+
+    <!-- ✅ Profile Fragment -->
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.jurni.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+
+        <!-- ✅ Action: Profile → Edit Profile -->
+        <action
+            android:id="@+id/action_nav_profile_to_editProfileFragment"
+            app:destination="@id/editProfileFragment"/>
+    </fragment>
+
+    <!-- ✅ Edit Profile Fragment -->
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.jurni.ui.profile.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile"/>
+
+</navigation>

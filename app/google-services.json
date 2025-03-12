@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "225189024832",
+    "firebase_url": "https://jurni-276b2-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "jurni-276b2",
+    "storage_bucket": "jurni-276b2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225189024832:android:21414d9aac3abdad847ba5",
+        "android_client_info": {
+          "package_name": "com.example.jurni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225189024832-rpbovn55s8pu1g5itdksatm97k3lj7gq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jurni",
+            "certificate_hash": "8a5256cb148b5c41c06f1a52ad2303632efb3ff6"
+          }
+        },
+        {
+          "client_id": "225189024832-4flj6ssr9qtbek73i7anf4okf08ei4tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXMgH5nnPFti4ETIjzQ8FNzDw49clRJWY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225189024832-4flj6ssr9qtbek73i7anf4okf08ei4tn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

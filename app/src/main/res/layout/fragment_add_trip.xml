@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Destination -->
+        <EditText
+            android:id="@+id/et_destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Destination" />
+
+        <!-- Start Date -->
+        <EditText
+            android:id="@+id/et_start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Start Date"
+            android:focusable="false" />
+
+        <!-- End Date -->
+        <EditText
+            android:id="@+id/et_end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="End Date"
+            android:focusable="false" />
+
+        <!-- Flight Cost -->
+        <EditText
+            android:id="@+id/et_flight_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Flight Cost"
+            android:inputType="numberDecimal" />
+
+        <!-- Hotel Cost -->
+        <EditText
+            android:id="@+id/et_hotel_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hotel Cost"
+            android:inputType="numberDecimal" />
+
+        <!-- Attractions List -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attractions" />
+
+        <LinearLayout
+            android:id="@+id/attractions_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btn_add_attraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Attraction" />
+
+        <!-- Total Budget -->
+        <TextView
+            android:id="@+id/tv_total_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Budget: $0" />
+
+        <!-- Save Trip Button -->
+        <Button
+            android:id="@+id/btn_save_trip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Trip" />
+    </LinearLayout>
+</ScrollView>
