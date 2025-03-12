@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Trip Destination -->
+    <TextView
+        android:id="@+id/tv_trip_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destination: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <!-- Trip Dates -->
+    <TextView
+        android:id="@+id/tv_trip_dates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dates: "
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+    <!-- Total Budget -->
+    <TextView
+        android:id="@+id/tv_total_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Budget: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <!-- Attractions List -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attractions:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_attractions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:background="#DBDBDB"
+        android:padding="8dp" />
+    <Button
+        android:id="@+id/btn_edit_trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Trip"
+        android:layout_marginTop="16dp"/>
+
+
+</LinearLayout>

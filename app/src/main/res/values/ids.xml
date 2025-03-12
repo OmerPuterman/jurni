@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Correct way to define an ID -->
+    <item name="nav_host_fragment" type="id"/>
+    <item name="card_favorite_holiday" type="id" />
+    <item name="card_other_info" type="id" />
+    <item name="recycler_view_attractions" type="id" />
+</resources>
